@@ -1,4 +1,4 @@
-# shelltemplate #
+# Shell template #
 I noticed that I usually write the same pieces of code at the start of every
 project. There's the shebang, the copyright header, the program name and the
 version. This is then followed by variables that holds the path to the binaries
