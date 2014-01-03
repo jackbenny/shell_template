@@ -26,6 +26,9 @@ Author="Jack-Benny Persson (jack-benny@cyberinfo.se)"
 
 # Binaries
 Which="/usr/bin/which"
+# Binaries entered in the list will be avalible to the script as variables with
+# the first letter uppercase
+Binaries=(sed awk egrep mail printf cat grep mktemp rm tail)
 
 # Variables
 
@@ -61,7 +64,6 @@ print_help()
 # Create variables with absolute path to binaries and check
 # if we can execute it (binaries will be avaliable in 
 # variables with first character uppercase, such as Grep)
-Binaries=(sed awk egrep mail printf cat grep mktemp rm tail)
 Count=0
 for i in ${Binaries[@]}; do
 	$Which $i &> /dev/null
@@ -96,7 +98,6 @@ done
 
 
 ### Main ###
-
 
 
 exit 0
