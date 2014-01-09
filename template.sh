@@ -38,7 +38,7 @@ Binaries=(sed awk egrep mail printf cat grep mktemp rm tail)
 # Print version information
 print_version()
 {
-        $Printf "\n\n$0 - $Version\n"
+        $Printf "\n$0 - $Version\n"
 }
 
 # Print help information
